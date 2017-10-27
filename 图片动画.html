@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        #container{
+            width: 800px;
+            height: 300px;
+            overflow: hidden;
+            margin: 50px auto;
+        }
+        #container li{
+          float: left;
+            width: 160px;
+            height: 300px;
+            position: relative;
+            -webkit-transition: all 1s ease;
+        }
+        #container li img{
+            width: 600px;
+            height: 300px;
+        }
+        #container:hover li{
+            width:50px;
+        }
+        #container li:hover{
+            width: 600px;
+        }
+        #container li a{
+            height: 30px;
+           background: rgba(0,0,0,0.5);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <li><img src="ximg/1.jpg" alt=""><a>1</a></li>
+    <li><img src="ximg/2.jpg" alt=""><a>2</a></li>
+    <li><img src="ximg/3.jpg" alt=""><a>3</a></li>
+    <li><img src="ximg/4.jpg" alt=""><a>4</a></li>
+    <li><img src="ximg/5.jpg" alt=""><a>5</a></li>
+</div>
+</body>
+</html>
