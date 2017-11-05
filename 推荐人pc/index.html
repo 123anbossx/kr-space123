@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            border: none;
+            list-style: none;
+            text-decoration: none;
+        }
+        body html{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+
+        }
+        .image-container{
+            box-sizing: border-box;
+        }
+        .image-container img:nth-child(1){
+            width: 100%;
+            height: 100%;
+            /*min-height: 710px;*/
+            display: block;
+        }
+        .recomment-container{
+            height: 221px;
+            background-color: #FFFFFF;
+        }
+        .recomment{
+            margin: 0 auto;
+            height: 221px;
+            margin-left: 18.5%;
+            margin-right: 15%;
+            display: -webkit-flex;
+        }
+        /*.recomment div:nth-child(1){*/
+            /*margin-right: 40px;*/
+        /*}*/
+        /*.recomment div:nth-child(2){*/
+            /*display: flex;*/
+        /*}*/
+        /*.recomment div:nth-child(3){*/
+            /*margin-left: 40px;*/
+        /*}*/
+        .recomment div{
+            flex: 1;
+        }
+
+        .recomment div span:nth-child(1){
+           width: 120px;
+            height: 120px;
+            margin-top: 50px;
+            display: block;
+            float: left;
+        }
+        .recomment div span img{
+           width: 100%;
+            height: 100%;
+        }
+        .recomment div span:nth-child(2){
+            margin-top: 65.5px;
+            display: block;
+          width: 240px;
+        }
+        .recomment div span:nth-child(2) li:nth-child(1){
+            color: #333333;
+            font-size: 24px;
+
+        }
+        .recomment div span:nth-child(2) li:nth-child(2){
+            margin-top: 5px;
+            color: #666666;
+            font-size: 16px;
+            line-height: 23px;
+            width: 270px;
+
+        }
+        .tel-container{
+            height: 305px;
+            background-color: #f6f6f6;
+            overflow: hidden;
+        }
+        .btn-container{
+            width: 400px;
+            height: 185px;
+            margin: 59px auto;
+
+        }
+        .btn-container input:nth-child(1)::placeholder{
+            color: #CCCCCC;
+        }
+        .btn-container input:nth-child(1){
+            border-radius: 4px;
+           box-sizing: border-box;
+            width: 100%;
+            height: 56px;
+            padding-left: 135px;
+            /*color: #cccccc;*/
+            font-size: 16px;
+            border: 2px solid #dfdfdf;
+        }
+       .btn-container div:nth-child(2){
+           border-radius: 4px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            margin-top: 12px;
+            background-color: #386ffd;
+            color: #ffffff;
+            font-size: 16px;
+           cursor: pointer;
+        }
+        .btn-container div:nth-child(3){
+            margin: 38px auto;
+          text-align: center;
+            color: #999999;
+            font-size: 16px;
+        }
+        .explain{
+            height: 426px;
+            background-color: #ffffff;
+        }
+        .explain div:nth-child(1){
+            margin-top: 60px;
+            color: #333333;
+            text-align: center;
+            font-size: 20px;
+        }
+        .explain div:nth-child(2){
+            margin: 17px auto;
+            width: 60px;
+            background-color: #386ffd;
+            height: 3px;
+        }
+        .explain div:nth-child(3){
+
+            line-height: 25px;
+            font-size: 16px;
+           width: 520px;
+            margin: 37px auto;
+            color: #666666;
+            padding-left: 20px;
+        }
+        .explain div:nth-child(4){
+            text-align: center;
+            margin-top: 63px;
+            color: #999999;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+ <div class="image-container">
+     <img src="image/bg.png" alt="">
+ </div>
+    <div class="recomment-container">
+     <div class="recomment">
+        <div class="icon-recomment">
+           <span>
+               <img src="image/icon_share.png" alt="">
+           </span>
+            <span>
+                <li>成为推介人</li>
+                <li>领取佣金的唯一凭证请填写真实手机号码</li>
+            </span>
+        </div>
+         <div class="icon-enter">
+             <span>
+                 <img src="image/icon_enter.png" alt="">
+             </span>
+             <span>
+                 <li>邀请入驻</li>
+                 <li>将活动页面分享至好友或朋友圈</li>
+             </span>
+         </div>
+         <div class="icon-money">
+             <span>
+                  <img src="image/icon-commission.png" alt="">
+             </span>
+             <span>
+                 <li>获得佣金</li>
+                 <li>被推介人入驻租金6%会作为您的佣金</li>
+             </span>
+         </div>
+     </div>
+    </div>
+    <div class="tel-container">
+       <div class="btn-container">
+           <input type="text"placeholder="请输入您的手机号码">
+           <div>提交</div>
+           <div>
+               信息将仅用于本次活动使用
+           </div>
+       </div>
+
+
+    </div>
+    <div class="explain">
+        <div>获取佣金说明</div>
+        <div></div>
+        <div>
+            1. 通过您分享的页面提交氪空间预约参观信息的人，都是您的被推介人<br>
+            （即您是他们的推介人）；<br>
+            2. 被推介人最终签约氪空间入驻时，我们会立即联系其最早的推介人，<br>
+            按总租金金额的6%发放佣金（总租金最多按12个月计算）；<br>
+            3. 被推介人在填写资料后一年内签约均可获得佣金奖励；<br>
+            4. 被推介人续约不计算佣金。</div>
+        <div>活动最终解释权归氪空间所有</div>
+    </div>
+</div>
+</body>
+</html>

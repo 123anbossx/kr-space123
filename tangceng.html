@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            border: none;
+        }
+        body html{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: rgba(44,43,41,0.5);
+            position: relative;
+        }
+        .close{
+            position: absolute;
+            width:32px;
+            height: 32px;
+            border-radius: 50%;
+            left: 83%;
+            top: 6%;
+            background: url("ximg/close.png") no-repeat;
+            background-size: 100%;
+        }
+        .envelope{
+            position: absolute;
+            top: 16%;
+            bottom: 20%;
+            left: 5%;
+            right: 3%;
+            background-color: red;
+            background: url("ximg/envelope.png") no-repeat;
+            background-size: 100%;
+
+        }
+        .know{
+            position: absolute;
+            bottom: 23%;
+            right: 20%;
+            width: 105px;
+            height: 37px;
+            background-color: red;
+            transform: rotate(-15deg);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <div class="close"></div>
+        <div class="envelope">
+            <div class="know"></div>
+        </div>
+</div>
+</body>
+</html>
